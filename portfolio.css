@@ -1,0 +1,268 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* prva strana*/
+
+#main1 {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-style: italic;
+    color: wheat;
+    font-size: 1.5rem;
+    background-image: url(images/Main1nebo2.jpg);
+    background-size: cover;
+}
+
+
+.main1{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+/*animacija za skills*/
+.col .skills {
+    background: #353b48;
+    display: block;
+    height: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 20px #2187e7b3;
+            box-shadow: 0 0 20px #2187e7b3;
+  }
+  
+.col .skills span {
+    height: 7px;
+    float: left;
+    background: #00c8f8;
+  }
+  
+.html {
+    width: 90%;
+}
+  
+.css {
+    width: 70%;
+}
+  
+.js {
+    width: 30%;
+}
+.col ul li {
+    margin-bottom: 70px;
+    list-style: none;
+    
+  }
+
+.col {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+/* druga strana */
+#main2{
+    width: 100vw;
+    height: 100vh;
+}
+.nav {
+   
+    height: 10vh;
+    text-align: center;
+    margin-top: 3%;
+    border-bottom: 1px solid #353b48;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+   
+}
+.kont li {
+	display: inline-block;
+}
+.kont li a {
+	margin: 30px;
+	text-decoration: none;
+    text-decoration: underline;
+    color: rgb(19, 19, 20);
+    font-size: 1.5rem;
+    background-color: white;
+}
+.container {
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.tekst p {
+    font-size: 1.7rem;
+}
+.slika img {
+    margin-top: 100px;
+}
+.ikonice {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+/* treca strana */
+.gith {
+    background-image: url(Images/Main1nebo2.jpg);
+    height: 40vh;
+}
+.gith h2 {
+    color: antiquewhite;
+    font-style: italic;
+}
+a.btn{
+    font-size: 2.5em;
+    color: antiquewhite;
+}
+a.btn:hover {
+    background-color: rgb(88, 156, 196)
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 1.5rem;
+    background-color: rgb(209, 205, 205);
+
+}
+#contact {
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    background-color: rgb(209, 205, 205);
+    
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.footer-social li {
+    margin: 30px;
+}
+
+/*  responsive*/
+@media screen and (max-width:1020px) and (orientation: landscape){
+    .main1, .skills, .col p{
+        font-size: 0.6rem;
+    }
+    .slika{
+        display: none;
+    }
+    .container .tekst p {
+        font-size: 1.2rem;
+        width: 100vw;
+        
+    }
+    .ikonice{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:768px) and (orientation: landscape){
+    .main1, .skills, .col p{
+        font-size: 0.6rem;
+    }
+    .slika{
+        display: none;
+    }
+    .container .tekst p {
+        font-size: 1rem;
+        
+    }
+    .ikonice{
+        display: none;
+    }
+    .col ul li {
+        margin-bottom: 50px;
+        list-style: none;
+    }
+} 
+
+
+@media screen and (max-width:768px) {
+    #ikonice {
+        margin-top: 5%;
+    }
+    .tekst p {
+        width: 90vw;
+        font-size:1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:480px){
+    #main1 {
+        font-size: 0.6rem;
+    }
+    .kont ul a, .kont ul i {
+       font-size: 1rem;
+    }
+    .tekst p {
+        width: 90vw;
+       
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .slika img {
+        display: none;
+    }
+    #ikonice {
+        display: none;
+    }
+
+    .ikonice img {
+        height: 20vw;
+        width: 15vh;
+        justify-content: center;
+    }
+    .row h2{
+    font-size: 1rem;
+    }
+    ul.footer-social li {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #contact h2 {
+       font-size: 0.5rem;
+    }
+}
